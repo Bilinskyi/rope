@@ -1,0 +1,33 @@
+$normal: 14px;
+
+$rb: 'Roboto', sans-serif;
+$rbc: 'Roboto Condensed', sans-serif;
+$pts: 'PT Sans', sans-serif;
+$fdc: 'FuturaDemiC';
+
+
+
+$min-bl:      "only screen and (min-width : 1630px)";
+$min-l:      "only screen and (min-width : 1320px)";
+$min-m:    "only screen and (min-width : 992px)";
+$min-s:    "only screen and (min-width : 768px)";
+
+$bp-blarge:      "only screen and (max-width : 1629px)";
+$bp-large:      "only screen and (max-width : 1319px)";
+$bp-medium:     "only screen and (max-width : 991px)";
+$bp-small:      "only screen and (max-width : 767px)";
+$bp-xsmall:    "only screen and (max-width : 479px)";
+$bp-xxsmall:    "only screen and (max-width : 320px)";
+
+
+// ul {
+	// @media #{$bp-small} {
+	// 	width: 100%;
+	// }
+// }
+
+// ul {  
+//   @include respond-to(desktope) {
+//     width: 400%;
+//   }
+// }

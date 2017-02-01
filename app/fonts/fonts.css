@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
+
+
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url('FuturaDemiC.eot');
+  src: url('FuturaDemiC.woff2') format('woff2'),
+       url('FuturaDemiC.woff') format('woff'),
+       url('FuturaDemiC.ttf') format('truetype'),
+       url('FuturaDemiC.svg#FuturaDemiC') format('svg'),
+       url('FuturaDemiC.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
