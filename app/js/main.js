@@ -39,6 +39,17 @@ $(document).ready(function(){
 		});
 	}
 
+		if($('.slider-3').length) {
+		$('.slider-3').slick({
+
+			dots: true,
+			infinite: true,
+			speed: 500,
+			cssEase: 'ease'
+		});
+	}
+
+
 
 	if (window.innerWidth < 1000) {
 		$('.partners').slick('unslick');
@@ -58,6 +69,8 @@ $(document).ready(function(){
 		});
 	}
 
+
+	$('.price-block__top-img, .block-demo').matchHeight();
 
 
 
@@ -95,5 +108,16 @@ $('input,textarea').focus(function(){
 }).blur(function(){
 	$(this).attr('placeholder',$(this).data('placeholder'));
 });
+
+
+
+$('.up-block__link').on('click', function() {
+	$('body, html').animate({
+		scrollTop: 0
+	}, 2000);	
+})
+
+$("img, a").on("dragstart", function(event) { event.preventDefault(); });
+
 
 });

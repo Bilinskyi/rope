@@ -4,6 +4,12 @@
 :-ms-input-placeholder {color: rgba(1,1,1, .7); font-family: $rb; font-weight: 400;font-size: 14px;}
 
 
+.container {
+	position: relative;
+}
+.relative {
+	position: relative;
+}
 *, *:before, *:after {
 	box-sizing: border-box;
 }
