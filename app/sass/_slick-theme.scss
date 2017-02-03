@@ -238,6 +238,13 @@ $slick-opacity-not-active: 0.25 !default;
 	// margin-bottom: 30px;
 }
 
+.section-video-slider .slick-dots {
+	@media #{$bp-small} {
+	      display: block !important;
+	      bottom: -20px !important;
+	}
+} 
+
 .slick-dots {
 	position: absolute;
 	bottom: 44px;
@@ -249,6 +256,9 @@ $slick-opacity-not-active: 0.25 !default;
 	width: 100%;
 	@media #{$bp-medium} {
 	      bottom: 20px;
+	}
+	@media #{$bp-small} {
+	      display: none !important;
 	}
 	li {
 		position: relative;

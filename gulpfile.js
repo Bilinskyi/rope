@@ -62,8 +62,8 @@ gulp.task('sass', function () {
 	return gulp.src('app/sass/**/*.scss')
 	.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 	.pipe(autoprefixer(['last 15 versions'], { cascade: true }))
-  // .pipe(gcmq())
-	// .pipe(cleanCSS({compatibility: 'ie8'}))
+  .pipe(gcmq())
+	.pipe(cleanCSS({compatibility: 'ie8'}))
 	.pipe(gulp.dest('app/css/'))
 	.pipe(browserSync.reload({
 		stream: true
