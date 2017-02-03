@@ -22,6 +22,11 @@
 		height: 84px;
 		background-size: cover;
 	}
+	@media #{$bp-large} {
+		width: 235px;
+		height: 62px;
+		background-size: cover;
+	}
 }
 .arrow-2 {
 	background: url(../img/arrow-2.png) center top no-repeat;
@@ -33,6 +38,11 @@
 	&_rotate {
 		transform: rotate(90deg);
 	}
+	@media #{$bp-large} {
+		width: 130px;
+	      height: 60px;
+	      background-size: cover;
+	}
 }
 
 .section-1 {
@@ -40,16 +50,28 @@
 	background-size: cover;
 	padding-top: 55px;
 	padding-bottom: 140px;
+	@media #{$bp-large} {
+		padding-bottom: 80px;
+	}
 	.phone-link {
 		margin-top: 12px;
 	}
 	header {
 		position: relative;
 		z-index: 2;
+		.button{
+			@media #{$bp-large} {
+				margin-top: 5px !important;
+				margin-bottom: 5px !important;
+			}
+		}
 	}
 
 	.block-shadow {
 		margin-top: 260px;
+		@media #{$bp-large} {
+			margin-top: 80px;
+		}
 	}
 	.catalog-img {
 		position: relative;
@@ -62,6 +84,9 @@
 				height: auto;
 			}
 		}
+		@media #{$bp-large} {
+			margin-top: -20px;
+		}
 	}
 	.header-bottom-img {
 		position: relative;
@@ -71,6 +96,10 @@
 			margin-top: -120px;
 			left: 0;
 		}
+		@media #{$bp-large} {
+			max-width: 90%;
+			margin-top: -90px;
+		}
 		img {
 			max-width: 100%;
 			height: auto;
@@ -79,6 +108,9 @@
 			position: absolute;
 			right: 30px;
 			bottom: 40px;
+			@media #{$bp-large} {
+				left: 65%;
+			}
 		}
 	}
 }
@@ -113,6 +145,10 @@
 		width: 232px;
 		height: 52px;
 	}
+	@media #{$bp-large} {
+		width: 173px;
+		height: auto;
+	}
 	img {
 		width: 100%;
 		height: auto;
@@ -139,6 +175,9 @@
 		color: #5aa632;
 		font-size: 14px;
 		font-weight: 700;
+		@media #{$bp-large} {
+			font-size: 12px;
+		}
 	}
 }
 .phone-link {
@@ -150,6 +189,10 @@
 	padding-left: 46px;
 	@media #{$bp-blarge} {
 		font-size: 21px;
+	}
+	@media #{$bp-large} {
+		font-size: 16px;
+		padding-left: 30px;
 	}
 	&__icon {
 		position: absolute;
@@ -163,6 +206,10 @@
 		@media #{$bp-blarge} {
 			width: 28px;
 			height: 28px;
+		}
+		@media #{$bp-large} {
+			width: 21px;
+			height: 21px;
 		}
 	}
 }
@@ -210,6 +257,10 @@ button {
 			font-size: 13px !important;
 			letter-spacing: .2px !important;
 		}
+		@media #{$bp-large} {
+			font-size: 10px !important;
+			letter-spacing: 0 !important;
+		}
 	}
 	&_text_s {
 		font-size: 13px;
@@ -222,6 +273,10 @@ button {
 		@media #{$bp-blarge} {
 			padding: 8px 14px 4px;
 		}
+		@media #{$bp-large} {
+			font-size: 9px;
+			padding: 7px 10px 3px;
+		}
 	}
 	&_size_lg {
 		padding-left: 35px;
@@ -229,13 +284,22 @@ button {
 		line-height: 70px;
 		height: 70px;
 		border-bottom-width: 6px;
-
+		position: relative;
+		z-index: 2;
 		letter-spacing: 2.4px;
 		@media #{$bp-blarge} {
 			height: 60px;
 			line-height: 60px;
 			font-size: 13px;
 			letter-spacing: 1.95px;
+		}
+		@media #{$bp-large} {
+			height: 44px;
+			line-height: 44px;
+			font-size: 12px;
+			letter-spacing: 1.4px;
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 	}
 	&_sm {
@@ -248,6 +312,14 @@ button {
 			height: 50px;
 			line-height: 50px;
 		}
+		@media #{$bp-large} {
+			height: 35px;
+			line-height: 35px;
+			font-size: 12px;
+			letter-spacing: 1.8px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 	}
 	&_md {
 		height: 65px;
@@ -258,6 +330,14 @@ button {
 		@media #{$bp-blarge} {
 			height: 50px;
 			line-height: 50px;
+		}
+		@media #{$bp-large} {
+			height: 40px;
+			line-height: 40px;
+			font-size: 12px;
+			letter-spacing: 1.8px;
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 	}
 
@@ -293,6 +373,10 @@ button {
 		font-size: 48px;
 		line-height: 52px;
 	}
+	@media #{$bp-large} {
+		font-size: 34px;
+		line-height: 36px;
+	}
 }
 .text-sm {
 	font-size: 20px;
@@ -303,11 +387,17 @@ button {
 	text-align: left;
 	&__item {
 		margin-right: 30px;
+		@media #{$bp-large} {
+			margin-right: 8px;
+		}
 		&:last-child {
 			margin-right: 0;
 		}
 		&> div{
 			margin-right: 10px;
+			@media #{$bp-large} {
+				margin-right: 5px;
+			}
 		}		
 	}
 
@@ -318,6 +408,9 @@ button {
 	float: left;
 	width: 17%;
 	text-align: left;
+	@media #{$bp-large} {
+		width: 19%;
+	}
 	&__header {
 		color: #6e6e6e;
 		text-align: center;
@@ -327,6 +420,10 @@ button {
 		margin-bottom: 58px;
 		@media #{$bp-blarge} {
 			font-size: 15px;
+		}
+		@media #{$bp-large} {
+			font-size: 11px;
+			margin-bottom: 40px;
 		}
 	}
 }
@@ -343,6 +440,10 @@ button {
 		padding-left: 22px;
 		padding-top: 30px;
 		padding-bottom: 25px;
+	}
+	@media #{$bp-large} {
+		padding-left: 18px;
+		padding-bottom: 20px;
 	}
 	&:before {
 		content: 'Области применения:';
@@ -363,6 +464,12 @@ button {
 	}
 	&__circle {
 		margin: 30px 0;
+		@media #{$bp-blarge} {
+			margin: 20px 0;
+		}
+		@media #{$bp-large} {
+			margin: 15px 0;
+		}
 		&:first-child {
 			margin-top: 0;
 		}
@@ -372,6 +479,9 @@ button {
 	}
 	&__circle > div {
 		margin-right: 20px;
+		@media #{$bp-large} {
+			margin-right: 5px;
+		}
 	}
 	& > &__circle {
 		display: block;
@@ -380,6 +490,9 @@ button {
 		font-size: 24px !important;
 		@media #{$bp-blarge} {
 			font-size: 20px !important;
+		}
+		@media #{$bp-large} {
+			font-size: 15px !important;
 		}
 	}
 }
@@ -400,9 +513,17 @@ button {
 			font-size: 13px;
 			line-height: 14px;
 		}
+		@media #{$bp-large} {
+			font-size: 10px;
+			line-height: 12px;
+		}
 		&.text_sm {
 			color: rgba(31,31,31, .6);
 			font-size: 14px;
+			@media #{$bp-large} {
+				font-size: 12px;
+				line-height: 14px;
+			}
 		}
 	}
 	&__circle {
@@ -418,6 +539,10 @@ button {
 			width: 48px;
 			height: 48px;
 		}
+		@media #{$bp-large} {
+			width: 36px;
+			height: 36px;
+		}
 		&[class*='icon-']::before {
 			position: absolute;
 			left: 0;
@@ -429,11 +554,17 @@ button {
 			@media #{$bp-blarge} {
 				font-size: 23px;
 			}
+			@media #{$bp-large} {
+				font-size: 20px;
+			}
 		}
 		&_size_md:before {
 			font-size: 33px !important;
 			@media #{$bp-blarge} {
 				font-size: 28px !important;
+			}
+			@media #{$bp-large} {
+				font-size: 24px !important;
 			}
 		}
 		&_small {
@@ -443,6 +574,10 @@ button {
 				width: 40px;
 				height: 40px;
 			}
+			@media #{$bp-large} {
+				width: 30px;
+				height: 30px;
+			}
 		}
 		&_xsmall {
 			width: 56px;
@@ -450,6 +585,13 @@ button {
 			@media #{$bp-blarge} {
 				width: 44px;
 				height: 44px;
+			}
+			@media #{$bp-large} {
+				width: 34px;
+				height: 34px;
+				&:before {
+					font-size: 15px !important;
+				}
 			}
 		}
 	}
@@ -467,11 +609,26 @@ button {
 		margin-right: 12px;
 		font-size: 11px;
 	}
+	&:before {
+		@media #{$bp-large} {
+			font-size: 10px;
+		}
+	}
+
 }
 
 
 .section-catalog-photo {
 	padding: 120px 0 153px;
+	@media #{$bp-large} {
+		padding: 65px 0 100px;
+	}
+	.form-wrap__title {
+		@media #{$bp-large} {
+			font-size: 13px;
+			line-height: 16px;
+		}
+	}
 	.block-shadow {
 		margin-top: 30px;
 	}
@@ -510,6 +667,9 @@ button {
 		@media #{$bp-blarge} {
 			padding: 33px 30px;
 		}
+		@media #{$bp-large} {
+			padding: 28px 25px;
+		}
 	}
 	&__title {
 		color: #272727;
@@ -520,6 +680,10 @@ button {
 		@media #{$bp-blarge} {
 			font-size: 34px;
 			line-height: 38px;
+		}
+		@media #{$bp-large} {
+			font-size: 24px;
+			line-height: 26px;
 		}
 		&_pb {
 			padding-bottom: 43px;
@@ -539,6 +703,9 @@ button {
 			padding-bottom: 30px;
 			margin-bottom: 30px;
 		}
+		@media #{$bp-large} {
+			padding-bottom: 15px;
+		}
 	}
 
 
@@ -554,6 +721,11 @@ button {
 			font-size: 14px;
 			margin: 4px 0;
 		}
+		@media #{$bp-large} {
+			font-size: 12px;
+			line-height: 14px;
+			padding-left: 20px;
+		}
 		&_size_md {
 			font-size: 22px;
 			line-height: 22px;
@@ -565,6 +737,10 @@ button {
 				line-height: 19px;
 				margin-bottom: 4px;
 				margin-top: 4px;
+			}
+			@media #{$bp-large} {
+				font-size: 14px;
+				padding-left: 20px;
 			}
 		}
 		&:last-child {
@@ -583,6 +759,9 @@ button {
 	// top: 50%;
 	// transform: translateY(-50%);
 	top: 5px;
+	@media #{$bp-large} {
+		font-size: 9px;
+	}
 }
 
 
@@ -594,6 +773,10 @@ button {
 	@media #{$bp-blarge} {
 		font-size: 16px;
 		line-height: 22px;
+	}
+	@media #{$bp-large} {
+		font-size: 12px;
+		line-height: 14px;
 	}
 	&_margin_minus {
 		margin-bottom: -20px;
@@ -611,6 +794,9 @@ button {
 		@media #{$bp-blarge} {
 			padding: 33px 30px;
 		}
+		@media #{$bp-large} {
+			padding: 28px 25px;
+		}
 	}
 	&__title {
 		font-size: 18px;
@@ -620,13 +806,20 @@ button {
 		@media #{$bp-blarge} {
 			font-size: 16px;
 		}
+		@media #{$bp-large} {
+			font-size: 14px;
+			line-height: 18px;
+			margin-bottom: 15px;
+		}
 	}
 }
 .form {
 	&__input-wrap {
 		position: relative;
 		margin-bottom: 10px;
-
+		@media #{$bp-large} {
+			margin-bottom: 6px;
+		}
 		&:before {
 			color: #8c8c8c;
 			position: absolute;
@@ -636,6 +829,10 @@ button {
 			font-size: 13px;
 			@media #{$bp-blarge} {
 				left: 25px;
+			}
+			@media #{$bp-large} {
+				left: 18px;
+				font-size: 10px;
 			}
 		}
 		input {
@@ -651,10 +848,18 @@ button {
 				height: 56px;
 				padding-left: 54px;
 			}
+			@media #{$bp-large} {
+				height: 42px;
+				padding-left: 40px;
+				font-size: 12px;
+			}
 		}
 	}
 	button {
 		margin-top: 25px;
+		@media #{$bp-large} {
+			margin-top: 15px;
+		}
 	}
 }
 
@@ -666,7 +871,6 @@ button {
 	font-size: 14px;
 	-webkit-font-smoothing: initial;
 	transform: translateY(-50%);
-	
 }
 .icon-success-button_left:before {
 	position: absolute;
@@ -677,6 +881,10 @@ button {
 	@media #{$bp-blarge} {
 		left: 24px;
 		font-size: 9px;
+	}
+	@media #{$bp-large} {
+		font-size: 7px;
+		left: 12px;
 	}
 }
 
@@ -692,6 +900,10 @@ button {
 	@media #{$bp-blarge} {
 		font-size: 42px;
 		line-height: 46px;
+	}
+	@media #{$bp-large} {
+		font-size: 32px;
+		line-height: 36px;
 	}
 	&_dashed {
 		padding-bottom: 6px;
@@ -719,6 +931,9 @@ button {
 		@media #{$bp-blarge} {
 			font-size: 32px;
 		}
+		@media #{$bp-large} {
+			font-size: 22px;
+		}
 	}
 	&_size_md {
 		font-size: 52px;
@@ -726,6 +941,10 @@ button {
 		@media #{$bp-blarge} {
 			font-size: 42px;
 			line-height: 46px;
+		}
+		@media #{$bp-large} {
+			font-size: 32px;
+			line-height: 36px;
 		}
 	}
 	&_size_lg {
@@ -735,6 +954,11 @@ button {
 			font-size: 42px;
 			line-height: 46px;
 		}
+		@media #{$bp-large} {
+			font-size: 32px;
+			line-height: 36px;
+		}
+
 	}
 }
 
@@ -744,6 +968,15 @@ button {
 
 .section-2 {
 	padding: 26px 0 80px;
+	@media #{$bp-large} {
+		padding-bottom: 50px;
+	}
+	.title {
+		@media #{$bp-large} {
+			font-size: 34px;
+			line-height: 38px;
+		}
+	}
 }
 .section-2_pattern {
 	background: url(../img/bg-2.jpg) center top no-repeat;
@@ -772,7 +1005,12 @@ button {
 		margin-left: 5px;
 		margin-right: 5px;
 		position: relative;
-		top: 2px;
+		// top: 2px;
+		@media #{$bp-large} {
+			width: 180px;
+			height: 36px;
+			line-height: 30px;
+		}
 		&:last-child {
 			margin-right: 15px;
 		}
@@ -783,6 +1021,9 @@ button {
 			border-width: 2px;
 			position: relative;
 			font-size: 16px;
+			@media #{$bp-large} {
+				font-size: 12px;
+			}
 			&:before {
 				content: '';
 				display: block;
@@ -804,7 +1045,6 @@ button {
 		background-color: white;
 		box-shadow: 0 0 11px rgba(0, 0, 0, 0.24);
 		position: relative;
-		height: 62px;
 		top: 0;
 		&:before {
 			content: '';
@@ -841,6 +1081,9 @@ button {
 		@media #{$bp-blarge} {
 			padding: 45px;
 		}
+		@media #{$bp-large} {
+			padding: 35px;
+		}
 	}
 
 	&__video-wrap {
@@ -848,6 +1091,9 @@ button {
 		float: left;
 		padding-top: 28px;
 		position: relative;
+		@media #{$bp-large} {
+			width: 36%;
+		}
 		.video-play {
 			margin: auto;
 			left: 0;
@@ -859,6 +1105,9 @@ button {
 			@media #{$bp-blarge} {
 				transform: translateX(-50px);
 			}	
+			@media #{$bp-large} {
+				transform: translateX(-30px); 
+			}
 		}
 		img {
 			max-width: 100%;
@@ -872,6 +1121,9 @@ button {
 	float: right;
 	width: 45%;
 	padding-left: 90px;
+	@media #{$bp-large} {
+		padding-left: 45px;
+	}
 	&__title {
 		color: #010101;
 		font-size: 22px;
@@ -880,6 +1132,11 @@ button {
 		@media #{$bp-blarge} {
 			font-size: 18px;
 			line-height: 22px;
+		}
+		@media #{$bp-large} {
+			font-size: 14px;
+			line-height: 18px;
+			margin-bottom: 20px;
 		}
 	}
 }
@@ -891,6 +1148,10 @@ button {
 		font-size: 15px;
 		margin: 6px 0;
 	}
+	@media #{$bp-large} {
+		font-size: 12px;
+		line-height: 13px;
+	}
 }
 
 
@@ -901,8 +1162,14 @@ button {
 	@media #{$bp-blarge} {
 		padding-bottom: 125px;
 	}
+	@media #{$bp-large} {
+		padding-bottom: 95px;
+	}
 	.title {
 		margin-bottom: 38px;
+		@media #{$bp-large} {
+			margin-bottom: 0px;
+		}
 	}
 	.price-block {
 		margin-top: 14px;
@@ -924,6 +1191,9 @@ button {
 			@media #{$bp-blarge} {
 				max-width: 85%;
 			}
+			@media #{$bp-large} {
+				margin-bottom: 10px;
+			}
 		}
 	}
 
@@ -933,6 +1203,9 @@ button {
 		padding-left: 48px;
 		@media #{$bp-blarge} {
 			padding: 25px 0 25px 35px;
+		}
+		@media #{$bp-large} {
+			padding-left: 30px;
 		}
 	}
 
@@ -953,6 +1226,9 @@ button {
 		@media #{$bp-blarge} {
 			font-size: 32px;
 		}
+		@media #{$bp-large} {
+			font-size: 25px;
+		}
 	}
 
 	&__dsc {
@@ -961,6 +1237,9 @@ button {
 		font-family: $pts;
 		@media #{$bp-blarge} {
 			font-size: 15px;
+		}
+		@media #{$bp-large} {
+			font-size: 12px;
 		}
 	}
 }
@@ -973,11 +1252,18 @@ button {
 		padding-left: 35px;
 		padding-right: 35px;
 	}
+	@media #{$bp-large} {
+		padding: 30px;
+		padding-bottom: 0;
+	}
 	&__button {
 		margin-top: 46px;
 		margin-bottom: 46px;
 		@media #{$bp-blarge} {
 			margin: 36px 0;
+		}
+		@media #{$bp-large} {
+			margin: 30px 0;
 		}
 	}
 	table {
@@ -994,6 +1280,9 @@ button {
 				padding: 7px 13px;
 				@media #{$bp-blarge} {
 					font-size: 18px;
+				}
+				@media #{$bp-large} {
+					font-size: 12px;
 				}
 				&:first-child {
 					border-right: 1px solid #eee;
@@ -1014,6 +1303,9 @@ button {
 	@media #{$bp-blarge} {
 		padding: 65px 0 80px;
 	}
+	@media #{$bp-large} {
+		padding: 50px 0 60px;
+	}
 	&__title {
 		margin-bottom: 63px;
 		@media #{$bp-blarge} {
@@ -1033,6 +1325,9 @@ button {
 	@media #{$bp-blarge} {
 		padding: 55px 0;
 	}
+	@media #{$bp-large} {
+		padding: 44px 0;
+	}
 	&__item {
 		margin-bottom: 20px;
 	}
@@ -1044,6 +1339,9 @@ button {
 		@media #{$bp-blarge} {
 			font-size: 20px;
 		}
+		@media #{$bp-large} {
+			font-size: 16px;
+		}
 	}
 
 	&__span {
@@ -1053,6 +1351,10 @@ button {
 		@media #{$bp-blarge} {
 			font-size: 15px;
 			line-height: 18px;
+		}
+		@media #{$bp-large} {
+			font-size: 12px;
+			line-height: 14px;
 		}
 	}
 }
@@ -1069,11 +1371,20 @@ button {
 	@media #{$bp-blarge} {
 		padding-top: 100px;
 	}
+	@media #{$bp-large} {
+		padding-top: 80px;
+		padding-bottom: 55px;
+	}
 	.section-promo-title {
 		margin-bottom: 50px;
 		@media #{$bp-blarge} {
 			font-size: 42px;
 			line-height: 46px;
+		}
+		@media #{$bp-large} {
+			font-size: 32px;
+			line-height: 36px;
+			margin-bottom: 30px;
 		}
 	}
 	.handout-img {
@@ -1097,6 +1408,9 @@ button {
 			transform: translate(70px, 60px);
 			@media #{$bp-blarge} {
 				transform: translate(40px, 0px)
+			}
+			@media #{$bp-blarge} {
+				transform: translate(90px, 20px)
 			}
 		}
 	}
@@ -1123,6 +1437,9 @@ button {
 	@media #{$bp-blarge} {
 		max-width: 75%;
 	}
+	@media #{$bp-large} {
+		max-width: 78%;
+	}
 	img {
 		max-width: 100%;
 		height: auto;
@@ -1142,6 +1459,9 @@ button {
 		@media #{$bp-blarge} {
 			top: 120px;
 		}
+		@media #{$bp-large} {
+			top: 70px;
+		}
 	}
 	.deliv-header {
 		padding-bottom: 30px;
@@ -1150,18 +1470,28 @@ button {
 			padding-bottom: 25px;
 			margin-bottom: 20px;
 		}
+		@media #{$bp-large} {
+			padding-bottom: 20px;
+			margin-bottom: 15px;
+		}
 	}
 	.logo-list {
 		padding-top: 20px;
 	}
 	.button {
 		margin-top: 30px;
+		@media #{$bp-large} {
+			margin-top: 15px;
+		}
 	}
 }
 
 .wrapp-deliv {
 	padding: 35px 40px 20px;
 	background-color: #fff;
+	@media #{$bp-large} {
+		padding: 28px 25px;
+	}
 }
 .deliv-header_border_bottom {
 	border-bottom: 1px solid #ededed;
@@ -1211,6 +1541,10 @@ button {
 	box-shadow: 0 9px 18px rgba(0, 0, 0, 0.05);
 	@media #{$bp-blarge} {
 		padding-bottom: 44px;
+	}
+	@media #{$bp-large} {
+		margin-top: 170px;
+		padding-bottom: 26px;
 	}
 	&:before {
 		content: '';
@@ -1272,6 +1606,10 @@ button {
 			font-size: 20px;
 			line-height: 24px;
 		}
+		@media #{$bp-large} {
+			font-size: 14px;
+			line-height: 18px;
+		}
 	}
 
 	&__circle {
@@ -1291,12 +1629,23 @@ button {
 		@media #{$bp-blarge} {
 			font-size: 33px;
 		}
+		@media #{$bp-large} {
+			font-size: 24px;
+			line-height: 26px;
+		}
 	}
 	@media #{$bp-blarge} {
 		padding-top: 170px;
 	}
+	@media #{$bp-large} {
+		padding-top: 130px;
+		padding-bottom: 100px;
+	}
 	.button {
 		letter-spacing: 0;
+		@media #{$bp-large} {
+			font-size: 10px;
+		}
 	}
 	.icon-mail-input {
 		@media #{$bp-blarge} {
@@ -1312,9 +1661,15 @@ button {
 	@media #{$bp-blarge} {
 		margin-top: 32px;
 	}
+	@media #{$bp-large} {
+		margin-top: 15px;
+	}
 	.video-play {
 		@extend %center-abs;
 		transform: translateX(-120px);
+		@media #{$bp-blarge} {
+			transform: translateX(0px);
+		}
 		.show {
 			white-space: nowrap;
 			position: absolute;
@@ -1326,6 +1681,11 @@ button {
 			font-size: 20px;
 			line-height: 24px;
 			font-family: $pts;
+			@media #{$bp-large} {
+				font-size: 16px;
+				line-height: 19px;
+				margin-left: 30px;
+			}
 		}
 	}
 	img {
@@ -1348,12 +1708,18 @@ button {
 		font-size: 26px;
 		line-height: 36px;
 	}
+	@media #{$bp-large} {
+		font-size: 20px;
+	}
 }
 
 
 .slider-1 {
 	&_mt {
 		margin-top: 60px;
+		@media #{$bp-large} {
+			margin-top: 30px;
+		}
 	}
 	&__img {
 		img {
@@ -1369,10 +1735,16 @@ button {
 	@media #{$bp-blarge} {
 		padding-bottom: 80px;
 	}
+	@media #{$bp-large} {
+		padding-bottom: 60px;
+	}
 	.title {
 		margin-bottom: 25px;
 		@media #{$bp-blarge} {
 			margin-bottom: 15px;
+		}
+		@media #{$bp-large} {
+			margin-bottom: 0px;
 		}
 	}
 }
@@ -1388,6 +1760,9 @@ button {
 	}
 	&_pd {
 		margin-top: 170px;
+		@media #{$bp-large} {
+			margin-top: 100px;
+		}
 	}
 }
 .top-title {
@@ -1397,13 +1772,19 @@ button {
 	@media #{$bp-blarge} {
 		font-size: 24px;
 	}
+	@media #{$bp-large} {
+		font-size: 18px;
+	}
 	&_color_green {
 		color: #5aa632;
 	}
 	&_size_s {
 		font-size: 26px;
 		@media #{$bp-blarge} {
-		      font-size: 20px;
+			font-size: 20px;
+		}
+		@media #{$bp-large} {
+		      font-size: 15px;
 		}
 	}
 }
@@ -1412,6 +1793,10 @@ button {
 	color: #010101;
 	font-size: 18px;
 	line-height: 22px;
+	@media #{$bp-large} {
+		font-size: 14px;
+		line-height: 16px;
+	}
 }
 
 
@@ -1421,6 +1806,10 @@ button {
 	margin-bottom: 140px;
 	@media #{$bp-blarge} {
 		padding-bottom: 35px;
+	}
+	@media #{$bp-large} {
+		padding: 80px 0 30px;
+		margin-bottom: 80px;
 	}
 }
 
@@ -1444,6 +1833,9 @@ button {
 	background-color: white;
 	&_pd {
 		padding: 70px 0;
+		@media #{$bp-large} {
+			padding: 30px 0;
+		}
 	}
 	&__left-top {
 		left: -23px;
@@ -1524,6 +1916,10 @@ button {
 	@media #{$bp-blarge} {
 		margin-top: 30px;
 	}
+	@media #{$bp-large} {
+		padding-left: 10px;
+		margin-top: 14px;
+	}
 }
 
 
@@ -1531,6 +1927,9 @@ button {
 	padding-top: 20px;
 	.icon-success {
 		font-size: 14px;
+		@media #{$bp-large} {
+			font-size: 10px;
+		}
 	}
 	&__button {
 		margin-top: -35px;
@@ -1552,6 +1951,10 @@ button {
 	@media #{$bp-blarge} {
 		width: 70%;
 	}
+	@media #{$bp-large} {
+		width: 74%;
+		right: 30px;
+	}
 	&:before {
 		content: '';
 		display: block;
@@ -1560,10 +1963,16 @@ button {
 		right: 0;
 		height: 305px;
 		background-image: linear-gradient(180deg, white 0%, transparent 100%);
+		@media #{$bp-large} {
+			height: 150px;
+		}
 	}
 	img {
 		max-width: 100%;
 		height: auto;
+		@media #{$bp-large} {
+			margin-top: 70px;
+		}
 	}
 }
 
@@ -1576,12 +1985,16 @@ button {
 	@media #{$bp-blarge} {
 		padding: 60px 70px;
 	}
+	@media #{$bp-large} {
+		padding: 54px 70px;
+	}
 	&_pd {
 		padding: 60px 80px;
 		margin-top: 70px;
 		@media #{$bp-blarge} {
 			padding: 60px 70px;
 		}
+
 	}
 	&_right {
 		float: right;
@@ -1607,6 +2020,10 @@ button {
 		@media #{$bp-blarge} {
 			font-size: 57px;
 		}
+		@media #{$bp-large} {
+			font-size: 44px;
+			letter-spacing: 1.04px;
+		}
 	}
 
 	&__span {
@@ -1617,12 +2034,20 @@ button {
 			font-size: 21px;
 			line-height: 24px;
 		}
+		@media #{$bp-large} {
+			font-size: 16px;
+			line-height: 16px;
+		}
 		&_size_lg {
 			font-size: 34px;
 			line-height: 35px;
 			@media #{$bp-blarge} {
 				font-size: 24px;
 				line-height: 25px;
+			}
+			@media #{$bp-large} {
+				font-size: 16px;
+				line-height: 16px;
 			}
 		}
 	}
@@ -1641,6 +2066,14 @@ button {
 	@media #{$bp-blarge} {
 		padding: 260px 0 110px;
 	}
+	@media #{$bp-large} {
+		padding: 220px 0 90px;
+	}
+	.form-wrap__title {
+		@media #{$bp-large} {
+			font-size: 13px;
+		}
+	}
 	.catalog-img {
 		position: relative;
 
@@ -1648,11 +2081,17 @@ button {
 		@media #{$bp-blarge} {
 			margin-top: -260px;
 		}
+		@media #{$bp-large} {
+			margin-top: -200px;
+		}
 		img {
 			max-width: 100%;
 			height: auto;
 			position: relative;
 			left: -60px;
+			@media #{$bp-large} {
+				left: -40px;
+			}
 		}
 	}
 	.image-img {
@@ -1677,6 +2116,9 @@ button {
 				left: 75%;
 				right: auto;
 			}
+			@media #{$bp-large} {
+				bottom: 120px;
+			}
 		}
 	}
 }
@@ -1687,10 +2129,16 @@ button {
 	@media #{$bp-blarge} {
 		margin-bottom: 110px;
 	}
+	@media #{$bp-large} {
+		margin-bottom: 80px;
+	}
 	&__mb {
 		margin-bottom: 65px;
 		@media #{$bp-blarge} {
 			margin-bottom: 40px;
+		}
+		@media #{$bp-large} {
+			margin-bottom: 30px;
 		}
 	}
 }
@@ -1703,6 +2151,9 @@ button {
 		@media #{$bp-blarge} {
 			margin-bottom: 50px;
 		}
+		@media #{$bp-large} {
+			margin-bottom: 30px;
+		}
 	}
 }
 
@@ -1713,6 +2164,9 @@ button {
 		@media #{$bp-blarge} {
 			margin-top: 50px;
 			font-size: 13px;
+		}
+		@media #{$bp-large} {
+			margin-top: 30px;
 		}
 	}
 }
@@ -1738,6 +2192,10 @@ button {
 		img {
 			float: left;
 			margin-right: 30px;
+			@media #{$bp-large} {
+				margin-right: 20px;
+				width: 56px;
+			}
 		}
 	}
 
@@ -1754,6 +2212,9 @@ button {
 		@media #{$bp-blarge} {
 			font-size: 16px;
 			line-height: 20px;
+		}
+		@media #{$bp-large} {
+			font-size: 14px;
 		}
 	}
 }
@@ -1776,9 +2237,16 @@ button {
 	}
 	&>div:not(:nth-child(3n)) {
 		padding-left: 140px;
+		@media #{$bp-large} {
+			padding-left: 70px;
+		}
 	}
+
 	&>div {
 		margin: 60px 0;
+		@media #{$bp-large} {
+			margin: 30px 0;
+		}
 	}
 }
 .partner-box {
@@ -1786,6 +2254,18 @@ button {
 	&__img {
 		line-height: 81px;
 		margin-bottom: 20px;
+		@media #{$bp-large} {
+			margin-bottom: 10px;
+		}
+		img {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			@media #{$bp-large} {
+				max-width: 55%;
+				height: auto;
+			}
+		}
 	}
 
 	&__title {
@@ -1798,6 +2278,10 @@ button {
 			font-size: 24px;
 			letter-spacing: 0.43px;
 		}
+		@media #{$bp-large} {
+			font-size: 18px;
+			letter-spacing: 0.32px;
+		}
 	}
 
 	&__sub {
@@ -1809,6 +2293,10 @@ button {
 			font-size: 18px;
 			letter-spacing: 0.32px;
 		}
+		@media #{$bp-large} {
+			font-size: 14px;
+			letter-spacing: 0.25px;
+		}
 	}
 }
 
@@ -1819,8 +2307,14 @@ button {
 
 .section-video-slider {
 	padding-top: 130px;
+	@media #{$bp-large} {
+	      padding-top: 85px;
+	}
 	.title {
 		margin-bottom: 80px;
+		@media #{$bp-large} {
+		      margin-bottom: 30px;
+		}
 	}
 }
 
@@ -1830,6 +2324,9 @@ button {
 	border-radius: 3px;
 	padding-right: 130px;
 	margin-bottom: 46px;
+	@media #{$bp-large} {
+	      padding-right: 50px;
+	}
 	.slick-dots {
 		bottom: -46px;
 		li button {
@@ -1842,10 +2339,16 @@ button {
 	p {
 		color: #010101;
 		font-size: 14px;
+		@media #{$bp-large} {
+		      font-size: 12px;
+		}
 		&+p {
 			margin-top: 35px;
 			@media #{$bp-blarge} {
-			      margin-top: 25px;
+				margin-top: 25px;
+			}
+			@media #{$bp-large} {
+			      margin-top: 20px;
 			}
 		}
 		i {
@@ -1862,6 +2365,9 @@ button {
 	max-width: 100%;
 	height: 100%;
 	position: relative;
+	@media #{$bp-large} {
+	      width: 100%;
+	}
 	.video-play {
 		@extend %center-abs;
 	}
@@ -1874,12 +2380,18 @@ button {
 }
 .r-text {
 	padding-top: 40px;
+	@media #{$bp-large} {
+	      padding-top: 25px;
+	}
 }
 .name {
 	color: #010101;
 	font-size: 34px;
 	@media #{$bp-blarge} {
-	      font-size: 24px;
+		font-size: 24px;
+	}
+	@media #{$bp-large} {
+	      font-size: 18px;
 	}
 }
 
@@ -1893,17 +2405,26 @@ button {
 .section-maps {
 	padding-top: 80px;
 	@media #{$bp-blarge} {
-	      padding-top: 70px;
+		padding-top: 70px;
+	}
+	@media #{$bp-large} {
+	      padding-top: 55px;
 	}
 	.title {
 		margin-bottom: 80px;
 		@media #{$bp-blarge} {
-		      margin-bottom: 65px;
+			margin-bottom: 65px;
+		}
+		@media #{$bp-large} {
+		      margin-bottom: 35px;
 		}
 	}
 	.icon-phone-input {
 		margin-right: 6px;
 		font-size: 12px;
+		@media #{$bp-large} {
+		      font-size: 10px;
+		}
 	}
 
 }
@@ -1922,8 +2443,11 @@ button {
 	padding-top: 70px;
 	padding-bottom: 180px;
 	@media #{$bp-blarge} {
-	      padding-bottom: 130px;
-	      padding-top: 50px;
+		padding-bottom: 130px;
+		padding-top: 50px;
+	}
+	@media #{$bp-large} {
+	      padding-bottom: 110px;
 	}
 }
 .place-box {
@@ -1933,7 +2457,10 @@ button {
 	position: relative;
 	display: inline-block;
 	@media #{$bp-blarge} {
-	      width: 375px;
+		width: 375px;
+	}
+	@media #{$bp-large} {
+	      width: 280px;
 	}
 	&.right {
 		margin-right: 50px;
@@ -1952,6 +2479,10 @@ button {
 		top: 100%;
 		left: 50%;
 		transform: translateX(-50%);
+		@media #{$bp-large} {
+		border: 10px solid transparent;
+		border-top: 10px solid #fff;		      
+		}
 	}
 	p {
 		color: black;
@@ -1960,10 +2491,15 @@ button {
 		line-height: 26px;
 		padding-left: 40px;
 		@media #{$bp-blarge} {
-		      font-size: 16px;
-letter-spacing: 0.38px;
-line-height: 20px;
-margin: 10px 0;
+			font-size: 16px;
+			letter-spacing: 0.38px;
+			line-height: 20px;
+			margin: 10px 0;
+		}
+		@media #{$bp-large} {
+		      font-size: 13px;
+line-height: 15px;
+padding-left: 20px;
 		}
 	}
 	&__image {
@@ -1978,13 +2514,20 @@ margin: 10px 0;
 		color: rgba(8,8,8, .5);
 		font-size: 18px;
 		@media #{$bp-blarge} {
-	      font-size: 16px;
-	}
+			font-size: 16px;
+		}
+		@media #{$bp-large} {
+		      font-size: 12px;
+		}
 	}
 }
 .wrapp {
 	padding-left: 40px;
 	padding-top: 25px;
+	@media #{$bp-large} {
+	      padding-left: 20px;
+	      padding-top: 20px;
+	}
 	.top-title {
 		display: inline-block;
 		vertical-align: baseline;
@@ -2005,8 +2548,14 @@ margin: 10px 0;
 	padding-left: 40px;
 	padding-bottom: 25px;
 	@media #{$bp-blarge} {
-	      font-size: 17px;
-letter-spacing: 0.4px;
+		font-size: 17px;
+		letter-spacing: 0.4px;
+	}
+	@media #{$bp-large} {
+	      font-size: 14px;
+letter-spacing: 0.33px;
+padding-left: 20px;
+padding-bottom: 20px;
 	}
 }
 
@@ -2024,6 +2573,9 @@ letter-spacing: 0.4px;
 	padding-top: 105px;
 	background: url(../img/footer.jpg) center top no-repeat;
 	background-size: cover;
+	@media #{$bp-large} {
+	      padding-top: 60px;
+	}
 	.last-form__dsc {
 		margin: 10px 0 8px;
 	}
@@ -2043,7 +2595,7 @@ letter-spacing: 0.4px;
 			max-width: 100%;
 			height: auto;
 			@media #{$bp-blarge} {
-			      max-width: 90%;
+				max-width: 90%;
 			}
 		}
 	}
@@ -2058,9 +2610,13 @@ letter-spacing: 0.4px;
 		@media #{$bp-blarge} {
 			padding-top: 65px;
 			padding-bottom: 70px;
-		      .button {
-		      	font-size: 16px;
-		      }
+			.button {
+				font-size: 16px;
+			}
+		}
+		@media #{$bp-large} {
+			padding-top: 55px;
+			padding-bottom: 50px;
 		}
 	}
 
@@ -2068,12 +2624,21 @@ letter-spacing: 0.4px;
 		color: #262626;
 		font-size: 23px;
 		line-height: 32px;
+		@media #{$bp-large} {
+		      font-size: 16px;
+		      line-height: 19px;
+		      margin: 5px 0;
+		}
 	}
 
 	&__sub {
 		color: #262626;
 		font-size: 18px;
 		line-height: 22px;
+		@media #{$bp-large} {
+		      font-size: 12px;
+line-height: 15px;
+		}
 	}
 }
 
@@ -2084,15 +2649,15 @@ letter-spacing: 0.4px;
 	margin-top: -155px;
 	padding-bottom: 60px;
 	@media #{$bp-blarge} {
-	      margin-top: -100px;
-	      padding-bottom: 35px;
+		margin-top: -100px;
+		padding-bottom: 35px;
 	}
 }
 
 .f-left {
 	margin-top: 70px;
 	@media #{$bp-blarge} {
-	      margin-top: 0;
+		margin-top: 0;
 	}
 }
 .addr {
@@ -2112,7 +2677,7 @@ letter-spacing: 0.4px;
 	text-align: center;
 	padding-top: 75px;
 	@media #{$bp-blarge} {
-	      padding-top: 90px;
+		padding-top: 90px;
 	}
 	&__link {
 		display: inline-block;
@@ -2141,8 +2706,15 @@ letter-spacing: 0.4px;
 
 .custom-col-1 {
 	width: 58% !important;
+	@media #{$bp-large} {
+		width: 66.66666667% !important;
+	}
 }
 .custom-col-2 {
 	width: 42% !important;
 	padding-bottom: 50px;
+	@media #{$bp-large} {
+	          width: 33.33333333% !important;
+	          padding-bottom: 20px;
+	}
 }

@@ -72,6 +72,10 @@ $(document).ready(function(){
 
 	$('.price-block__top-img, .block-demo, .mh-1').matchHeight();
 
+	$('.box-text, .partner-box__img').matchHeight({
+		byRow: false
+	});
+
 
 
  //    $("a.modal-form").fancybox({

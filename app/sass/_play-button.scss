@@ -126,4 +126,8 @@
   border: 11px solid transparent;
   border-left: 15px solid #272727;
   transform: translateX(7px);
+  @media #{$bp-large} {
+    border: 8px solid transparent;
+      border-left: 10px solid #272727;
+  }
 }

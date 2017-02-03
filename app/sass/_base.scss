@@ -3,6 +3,14 @@
 :-moz-placeholder {color: rgba(1,1,1, .7); font-family: $rb; font-weight: 400;font-size: 14px;}
 :-ms-input-placeholder {color: rgba(1,1,1, .7); font-family: $rb; font-weight: 400;font-size: 14px;}
 
+@media #{$bp-large} {
+      ::-webkit-input-placeholder {font-size: 12px;}
+::-moz-placeholder {font-size: 12px;}
+:-moz-placeholder {font-size: 12px;}
+:-ms-input-placeholder {font-size: 12px;}
+
+}
+
 
 .container {
 	position: relative;
