@@ -104,6 +104,10 @@
     width: 3px;
     height: 22px;
     background-color: #bdbdbd;
+    @media #{$bp-medium} {
+          width: 1px;
+          height: 10px;
+    }
   }
   &:after {
     content: '';
@@ -112,6 +116,10 @@
     width: 22px;
     height: 3px;
     background-color: #bdbdbd;
+    @media #{$bp-medium} {
+          width: 10px;
+          height: 1px;
+    }
   }
 }
 .play-icon {
