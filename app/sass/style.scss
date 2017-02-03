@@ -17,6 +17,11 @@
 	background: url(../img/arrow.png) center top no-repeat;
 	width: 394px;
 	height: 106px;
+	@media #{$bp-blarge} {
+		width: 315px;
+		height: 84px;
+		background-size: cover;
+	}
 }
 .arrow-2 {
 	background: url(../img/arrow-2.png) center top no-repeat;
@@ -50,11 +55,26 @@
 		position: relative;
 		left: -100px;
 		margin-top: -60px;
+		@media #{$bp-blarge} {
+			left: -30px;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
 	}
 	.header-bottom-img {
 		position: relative;
 		margin-top: -170px;
 		left: 20px;
+		@media #{$bp-blarge} {
+			margin-top: -120px;
+			left: 0;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
 		.arrow {
 			position: absolute;
 			right: 30px;
@@ -67,6 +87,9 @@
 	position: absolute;
 	right: 20px;
 	top: -20px;
+	@media #{$bp-blarge} {
+		width: 60%;
+	}
 	img {
 		max-width: 100%;
 		height: auto;
@@ -86,6 +109,10 @@
 .logo {
 	width: 292px;
 	height: 67px;
+	@media #{$bp-blarge} {
+		width: 232px;
+		height: 52px;
+	}
 	img {
 		width: 100%;
 		height: auto;
@@ -121,6 +148,9 @@
 	display: inline-block;
 	position: relative;
 	padding-left: 46px;
+	@media #{$bp-blarge} {
+		font-size: 21px;
+	}
 	&__icon {
 		position: absolute;
 		left: 0;
@@ -130,6 +160,10 @@
 		width: 36px;
 		height: 36px;	
 		background-size: 100% 100%;	
+		@media #{$bp-blarge} {
+			width: 28px;
+			height: 28px;
+		}
 	}
 }
 button {
@@ -171,7 +205,11 @@ button {
 
 
 	&_font_sm {
-		font-size: 13px;
+		font-size: 13px !important;
+		@media #{$bp-blarge} {
+			font-size: 13px !important;
+			letter-spacing: .2px !important;
+		}
 	}
 	&_text_s {
 		font-size: 13px;
@@ -181,6 +219,9 @@ button {
 		padding: 9px 20px 7px;
 		font-size: 10px;
 		letter-spacing: 0.92px;
+		@media #{$bp-blarge} {
+			padding: 8px 14px 4px;
+		}
 	}
 	&_size_lg {
 		padding-left: 35px;
@@ -190,6 +231,12 @@ button {
 		border-bottom-width: 6px;
 
 		letter-spacing: 2.4px;
+		@media #{$bp-blarge} {
+			height: 60px;
+			line-height: 60px;
+			font-size: 13px;
+			letter-spacing: 1.95px;
+		}
 	}
 	&_sm {
 		height: 60px;
@@ -197,6 +244,10 @@ button {
 		padding-left: 30px;
 		padding-right: 30px;
 		letter-spacing: 2.4px;
+		@media #{$bp-blarge} {
+			height: 50px;
+			line-height: 50px;
+		}
 	}
 	&_md {
 		height: 65px;
@@ -204,6 +255,10 @@ button {
 		padding-left: 35px;
 		padding-right: 35px;
 		letter-spacing: 2.4px;
+		@media #{$bp-blarge} {
+			height: 50px;
+			line-height: 50px;
+		}
 	}
 
 }
@@ -233,6 +288,11 @@ button {
 	font-weight: 700;
 	line-height: 60px;
 	font-family: $rbc;
+	position: relative;
+	@media #{$bp-blarge} {
+		font-size: 48px;
+		line-height: 52px;
+	}
 }
 .text-sm {
 	font-size: 20px;
@@ -265,6 +325,9 @@ button {
 		padding: 10px 0px;
 		background-color: #f9f9f9;
 		margin-bottom: 58px;
+		@media #{$bp-blarge} {
+			font-size: 15px;
+		}
 	}
 }
 
@@ -276,6 +339,11 @@ button {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	position: relative;
+	@media #{$bp-blarge} {
+		padding-left: 22px;
+		padding-top: 30px;
+		padding-bottom: 25px;
+	}
 	&:before {
 		content: 'Области применения:';
 		position: absolute;
@@ -289,6 +357,9 @@ button {
 		font-size: 14px;
 		line-height: 17px;
 		color: rgba(31,31,31, .34);
+		@media #{$bp-blarge} {
+			font-size: 12px;
+		}
 	}
 	&__circle {
 		margin: 30px 0;
@@ -307,11 +378,16 @@ button {
 	}
 	[class*='icon-']::before {
 		font-size: 24px !important;
+		@media #{$bp-blarge} {
+			font-size: 20px !important;
+		}
 	}
 }
 .main-circle {
 	display: inline-block;
 	vertical-align: middle;
+	position: relative;
+	z-index: 4;
 	p {
 		margin: 0;
 		padding: 0;
@@ -320,6 +396,10 @@ button {
 		line-height: 19px;
 		display: inline-block;
 		vertical-align: middle;
+		@media #{$bp-blarge} {
+			font-size: 13px;
+			line-height: 14px;
+		}
 		&.text_sm {
 			color: rgba(31,31,31, .6);
 			font-size: 14px;
@@ -334,6 +414,10 @@ button {
 		border-radius: 50%;
 		display: inline-block;
 		vertical-align: middle;
+		@media #{$bp-blarge} {
+			width: 48px;
+			height: 48px;
+		}
 		&[class*='icon-']::before {
 			position: absolute;
 			left: 0;
@@ -342,17 +426,31 @@ button {
 			top: 50%;
 			transform: translateY(-50%);
 			font-size: 28px;
+			@media #{$bp-blarge} {
+				font-size: 23px;
+			}
 		}
 		&_size_md:before {
 			font-size: 33px !important;
+			@media #{$bp-blarge} {
+				font-size: 28px !important;
+			}
 		}
 		&_small {
 			width: 50px;
 			height: 50px;
+			@media #{$bp-blarge} {
+				width: 40px;
+				height: 40px;
+			}
 		}
 		&_xsmall {
 			width: 56px;
 			height: 56px;
+			@media #{$bp-blarge} {
+				width: 44px;
+				height: 44px;
+			}
 		}
 	}
 }
@@ -364,6 +462,11 @@ button {
 	vertical-align: middle;
 	vertical-align: top;
 	font-size: 13px;
+
+	@media #{$bp-blarge} {
+		margin-right: 12px;
+		font-size: 11px;
+	}
 }
 
 
@@ -374,6 +477,9 @@ button {
 	}
 	.price-img {
 		position: relative;
+		@media #{$bp-blarge} {
+			max-width: 90%;
+		}
 		img {
 			top: 0;
 			max-width: 100%;
@@ -401,6 +507,9 @@ button {
 	}
 	&_pd {
 		padding: 38px 40px 56px;
+		@media #{$bp-blarge} {
+			padding: 33px 30px;
+		}
 	}
 	&__title {
 		color: #272727;
@@ -408,8 +517,15 @@ button {
 		font-family: $rbc;
 		font-weight: 400;
 		line-height: 44px;
+		@media #{$bp-blarge} {
+			font-size: 34px;
+			line-height: 38px;
+		}
 		&_pb {
 			padding-bottom: 43px;
+			@media #{$bp-blarge} {
+				padding-bottom: 20px;
+			}
 		}
 	}
 }
@@ -419,6 +535,10 @@ button {
 		border-bottom: 1px solid #f0f0f0;
 		padding-bottom: 50px;
 		margin-bottom: 50px;
+		@media #{$bp-blarge} {
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+		}
 	}
 
 
@@ -430,12 +550,22 @@ button {
 		position: relative;
 		padding-left: 29px;
 		margin: 10px 0;
+		@media #{$bp-blarge} {
+			font-size: 14px;
+			margin: 4px 0;
+		}
 		&_size_md {
 			font-size: 22px;
 			line-height: 22px;
 			padding-left: 30px;
 			margin-top: 12px;
 			margin-bottom: 8px;
+			@media #{$bp-blarge} {
+				font-size: 18px;
+				line-height: 19px;
+				margin-bottom: 4px;
+				margin-top: 4px;
+			}
 		}
 		&:last-child {
 			margin-bottom: 0;
@@ -461,6 +591,10 @@ button {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 23px;
+	@media #{$bp-blarge} {
+		font-size: 16px;
+		line-height: 22px;
+	}
 	&_margin_minus {
 		margin-bottom: -20px;
 	}
@@ -474,12 +608,18 @@ button {
 	border: 2px dashed #ededed;
 	&_pd {
 		padding: 35px 40px 50px;
+		@media #{$bp-blarge} {
+			padding: 33px 30px;
+		}
 	}
 	&__title {
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 23px;
 		margin-bottom: 25px;
+		@media #{$bp-blarge} {
+			font-size: 16px;
+		}
 	}
 }
 .form {
@@ -494,6 +634,9 @@ button {
 			top: 52%;
 			transform: translateY(-50%);
 			font-size: 13px;
+			@media #{$bp-blarge} {
+				left: 25px;
+			}
 		}
 		input {
 			width: 100%;
@@ -504,6 +647,10 @@ button {
 			border: 1px solid #ececec;
 			border-radius: 3px;
 			box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+			@media #{$bp-blarge} {
+				height: 56px;
+				padding-left: 54px;
+			}
 		}
 	}
 	button {
@@ -519,6 +666,7 @@ button {
 	font-size: 14px;
 	-webkit-font-smoothing: initial;
 	transform: translateY(-50%);
+	
 }
 .icon-success-button_left:before {
 	position: absolute;
@@ -526,6 +674,10 @@ button {
 	margin-left: 0;
 	top: 50%;
 	transform: translateY(-50%);
+	@media #{$bp-blarge} {
+		left: 24px;
+		font-size: 9px;
+	}
 }
 
 
@@ -537,6 +689,10 @@ button {
 	position: relative;
 	font-family: $rbc;
 	color: #272727;
+	@media #{$bp-blarge} {
+		font-size: 42px;
+		line-height: 46px;
+	}
 	&_dashed {
 		padding-bottom: 6px;
 		&:after {
@@ -548,6 +704,9 @@ button {
 			width: 371px;
 			height: 0;
 			border-bottom: 4px dashed #fff;
+			@media #{$bp-blarge} {
+				border-width: 3px;
+			}
 		}
 	}
 	&_white {
@@ -557,14 +716,25 @@ button {
 		color: #090909;
 		font-size: 38px;
 		font-family: $rbc;
+		@media #{$bp-blarge} {
+			font-size: 32px;
+		}
 	}
 	&_size_md {
 		font-size: 52px;
 		line-height: 60px;
+		@media #{$bp-blarge} {
+			font-size: 42px;
+			line-height: 46px;
+		}
 	}
 	&_size_lg {
 		font-size: 59px;
 		line-height: 60px;
+		@media #{$bp-blarge} {
+			font-size: 42px;
+			line-height: 46px;
+		}
 	}
 }
 
@@ -668,6 +838,9 @@ button {
 		border-radius: 5px;
 		box-shadow: 0 0 11px rgba(0, 0, 0, 0.24);
 		padding: 60px 65px;
+		@media #{$bp-blarge} {
+			padding: 45px;
+		}
 	}
 
 	&__video-wrap {
@@ -683,6 +856,9 @@ button {
 			top: 0;
 			position: absolute;
 			transform: translateX(-70px);
+			@media #{$bp-blarge} {
+				transform: translateX(-50px);
+			}	
 		}
 		img {
 			max-width: 100%;
@@ -701,12 +877,20 @@ button {
 		font-size: 22px;
 		line-height: 27px;
 		margin-bottom: 40px;
+		@media #{$bp-blarge} {
+			font-size: 18px;
+			line-height: 22px;
+		}
 	}
 }
 .success-list__item_size_s {
 	font-size: 16px;
 	line-height: 18px;
 	margin: 9px 0;
+	@media #{$bp-blarge} {
+		font-size: 15px;
+		margin: 6px 0;
+	}
 }
 
 
@@ -714,6 +898,9 @@ button {
 
 .section-price {
 	padding-bottom: 155px;
+	@media #{$bp-blarge} {
+		padding-bottom: 125px;
+	}
 	.title {
 		margin-bottom: 38px;
 	}
@@ -734,6 +921,9 @@ button {
 			top: 50%;
 			transform: translateY(-50%);
 			margin-bottom: 45px;
+			@media #{$bp-blarge} {
+				max-width: 85%;
+			}
 		}
 	}
 
@@ -741,6 +931,9 @@ button {
 		background-color: #f3f3f3;
 		padding: 37px 0;
 		padding-left: 48px;
+		@media #{$bp-blarge} {
+			padding: 25px 0 25px 35px;
+		}
 	}
 
 	&__header_border_top1 {
@@ -757,12 +950,18 @@ button {
 		color: #272727;
 		font-size: 38px;
 		font-family: $rbc;
+		@media #{$bp-blarge} {
+			font-size: 32px;
+		}
 	}
 
 	&__dsc {
 		color: #010101;
 		font-size: 18px;
 		font-family: $pts;
+		@media #{$bp-blarge} {
+			font-size: 15px;
+		}
 	}
 }
 .price-block-footer {
@@ -770,9 +969,16 @@ button {
 	padding-left: 48px;
 	padding-right: 48px;
 	padding-top: 46px;
+	@media #{$bp-blarge} {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
 	&__button {
 		margin-top: 46px;
 		margin-bottom: 46px;
+		@media #{$bp-blarge} {
+			margin: 36px 0;
+		}
 	}
 	table {
 		border-collapse: collapse;
@@ -786,6 +992,9 @@ button {
 				font-size: 21px;
 				border: none;
 				padding: 7px 13px;
+				@media #{$bp-blarge} {
+					font-size: 18px;
+				}
 				&:first-child {
 					border-right: 1px solid #eee;
 				}
@@ -802,8 +1011,14 @@ button {
 .section-demo-set {
 	background-color: #f9f9f9;
 	padding: 85px 0 90px;
+	@media #{$bp-blarge} {
+		padding: 65px 0 80px;
+	}
 	&__title {
 		margin-bottom: 63px;
+		@media #{$bp-blarge} {
+			margin-bottom: 40px;
+		}
 	}
 }
 
@@ -815,7 +1030,9 @@ button {
 	text-align: center;
 	border-radius: 3px;
 	box-shadow: 0 2px 27px rgba(0, 0, 0, 0.02);
-
+	@media #{$bp-blarge} {
+		padding: 55px 0;
+	}
 	&__item {
 		margin-bottom: 20px;
 	}
@@ -824,12 +1041,19 @@ button {
 		color: #5aa632;
 		font-size: 23px;
 		font-weight: 700;
+		@media #{$bp-blarge} {
+			font-size: 20px;
+		}
 	}
 
 	&__span {
 		color: #010101;
 		font-size: 16px;
 		line-height: 22px;
+		@media #{$bp-blarge} {
+			font-size: 15px;
+			line-height: 18px;
+		}
 	}
 }
 
@@ -842,12 +1066,23 @@ button {
 
 .section-promo {
 	padding: 140px 0 83px;
+	@media #{$bp-blarge} {
+		padding-top: 100px;
+	}
 	.section-promo-title {
 		margin-bottom: 50px;
+		@media #{$bp-blarge} {
+			font-size: 42px;
+			line-height: 46px;
+		}
 	}
 	.handout-img {
 		position: relative;
 		left: -50px;
+		@media #{$bp-blarge} {
+			left: 0;
+			max-width: 80%;
+		}
 		img {
 			max-width: 100%;
 			height: auto;
@@ -859,13 +1094,20 @@ button {
 			right: 0;
 			bottom: 0;
 			top: 0;
-			transform: translate(70px, 60px)
+			transform: translate(70px, 60px);
+			@media #{$bp-blarge} {
+				transform: translate(40px, 0px)
+			}
 		}
 	}
 	.abs-promo {
 		position: absolute;
 		top: 54px;
 		right: 0;
+		@media #{$bp-blarge} {
+			top: 0px;
+			width: 38%;
+		}
 	}
 	&-title {
 		color: #272727;
@@ -878,6 +1120,9 @@ button {
 .free-del {
 	position: relative;
 	left: -30px;
+	@media #{$bp-blarge} {
+		max-width: 75%;
+	}
 	img {
 		max-width: 100%;
 		height: auto;
@@ -885,14 +1130,26 @@ button {
 }
 
 .section-gradient {
+	.button_md {
+		@media #{$bp-blarge} {
+			font-size: 13px;
+		}
+	}
 	.free-del-abs {
 		position: absolute;
 		right: 0;
 		top: 190px;
+		@media #{$bp-blarge} {
+			top: 120px;
+		}
 	}
 	.deliv-header {
 		padding-bottom: 30px;
 		margin-bottom: 36px;
+		@media #{$bp-blarge} {
+			padding-bottom: 25px;
+			margin-bottom: 20px;
+		}
 	}
 	.logo-list {
 		padding-top: 20px;
@@ -917,10 +1174,19 @@ button {
 	color: rgba(1,1,1, .5);
 	font-size: 14px;
 	font-family: $pts;
+	@media #{$bp-blarge} {
+		font-size: 12px;
+	}
 }
 .logo-list {
 
+	@media #{$bp-blarge} {
+		text-align: center; 
+	}
 	&__image {
+		@media #{$bp-blarge} {
+
+		}
 	}
 }
 
@@ -943,6 +1209,9 @@ button {
 	padding-bottom: 51px;
 	position: relative;
 	box-shadow: 0 9px 18px rgba(0, 0, 0, 0.05);
+	@media #{$bp-blarge} {
+		padding-bottom: 44px;
+	}
 	&:before {
 		content: '';
 		display: block;
@@ -968,6 +1237,9 @@ button {
 	.book {
 		margin-top: -130px;
 		margin-bottom: 40px;
+		@media #{$bp-blarge} {
+			margin-bottom: 10px;
+		}
 	}
 }
 .row {
@@ -996,6 +1268,10 @@ button {
 		font-size: 24px;
 		line-height: 28px;
 		margin: 0;
+		@media #{$bp-blarge} {
+			font-size: 20px;
+			line-height: 24px;
+		}
 	}
 
 	&__circle {
@@ -1011,8 +1287,21 @@ button {
 .section-share {
 	padding-top: 190px;
 	padding-bottom: 140px;
+	.get-free__title {
+		@media #{$bp-blarge} {
+			font-size: 33px;
+		}
+	}
+	@media #{$bp-blarge} {
+		padding-top: 170px;
+	}
 	.button {
 		letter-spacing: 0;
+	}
+	.icon-mail-input {
+		@media #{$bp-blarge} {
+			display: none;
+		}
 	}
 }
 
@@ -1020,6 +1309,9 @@ button {
 .video-wrapp {
 	margin-top: 75px;
 	position: relative;
+	@media #{$bp-blarge} {
+		margin-top: 32px;
+	}
 	.video-play {
 		@extend %center-abs;
 		transform: translateX(-120px);
@@ -1052,6 +1344,10 @@ button {
 	font-size: 32px;
 	line-height: 36px;
 	font-family: $pts;
+	@media #{$bp-blarge} {
+		font-size: 26px;
+		line-height: 36px;
+	}
 }
 
 
@@ -1070,8 +1366,14 @@ button {
 .section-const-price {
 	border-bottom: 1px solid #dbdbdb;
 	padding-bottom: 100px;
+	@media #{$bp-blarge} {
+		padding-bottom: 80px;
+	}
 	.title {
 		margin-bottom: 25px;
+		@media #{$bp-blarge} {
+			margin-bottom: 15px;
+		}
 	}
 }
 
@@ -1080,6 +1382,9 @@ button {
 .box-text {
 	&__item-top {
 		margin-bottom: 15px;
+		@media #{$bp-blarge} {
+			margin-bottom: 7px;
+		}
 	}
 	&_pd {
 		margin-top: 170px;
@@ -1089,11 +1394,17 @@ button {
 	font-size: 31px;
 	font-weight: 700;
 	font-family: $rbc;
+	@media #{$bp-blarge} {
+		font-size: 24px;
+	}
 	&_color_green {
 		color: #5aa632;
 	}
 	&_size_s {
 		font-size: 26px;
+		@media #{$bp-blarge} {
+		      font-size: 20px;
+		}
 	}
 }
 
@@ -1108,6 +1419,9 @@ button {
 	padding: 135px 0 65px;
 	border-bottom: 1px solid #dbdbdb;
 	margin-bottom: 140px;
+	@media #{$bp-blarge} {
+		padding-bottom: 35px;
+	}
 }
 
 
@@ -1163,6 +1477,10 @@ button {
 	border: 8px solid #ff9f00;
 	border-radius: 50%;
 	position: relative;
+	@media #{$bp-blarge} {
+		width: 37px;
+		height: 37px;
+	}
 	&:before,
 	&:after {
 		content: '';
@@ -1178,11 +1496,17 @@ button {
 		width: 2px;
 		height: 16px;
 		background-color: #ffc400;
+		@media #{$bp-blarge} {
+			height: 12px;
+		}
 	}
 	&:after {
 		height: 2px;
 		width: 16px;
 		background-color: #ffc400;
+		@media #{$bp-blarge} {
+			width: 12px;
+		}
 	}
 	&_abs {
 		position: absolute;
@@ -1197,6 +1521,9 @@ button {
 .map-text-left__layout {
 	padding-left: 30px;
 	margin-top: 50px;
+	@media #{$bp-blarge} {
+		margin-top: 30px;
+	}
 }
 
 
@@ -1222,6 +1549,9 @@ button {
 	top: 0;
 	width: 100%;
 	margin-top: 0px;
+	@media #{$bp-blarge} {
+		width: 70%;
+	}
 	&:before {
 		content: '';
 		display: block;
@@ -1243,9 +1573,15 @@ button {
 	box-shadow: inset 0 0 0px 21px #ffc400;
 	text-align: center;
 	padding: 80px 100px;
+	@media #{$bp-blarge} {
+		padding: 60px 70px;
+	}
 	&_pd {
 		padding: 60px 80px;
 		margin-top: 70px;
+		@media #{$bp-blarge} {
+			padding: 60px 70px;
+		}
 	}
 	&_right {
 		float: right;
@@ -1268,15 +1604,26 @@ button {
 		transform: translate(-50%, -50%);
 		padding-left: 25px;
 		padding-right: 25px;
+		@media #{$bp-blarge} {
+			font-size: 57px;
+		}
 	}
 
 	&__span {
 		color: #010101;
 		font-size: 24px;
 		line-height: 26px;
+		@media #{$bp-blarge} {
+			font-size: 21px;
+			line-height: 24px;
+		}
 		&_size_lg {
 			font-size: 34px;
 			line-height: 35px;
+			@media #{$bp-blarge} {
+				font-size: 24px;
+				line-height: 25px;
+			}
 		}
 	}
 }
@@ -1291,10 +1638,16 @@ button {
 
 .section-catalog-form {
 	padding: 360px 0 165px;
+	@media #{$bp-blarge} {
+		padding: 260px 0 110px;
+	}
 	.catalog-img {
 		position: relative;
 
 		margin-top: -360px;
+		@media #{$bp-blarge} {
+			margin-top: -260px;
+		}
 		img {
 			max-width: 100%;
 			height: auto;
@@ -1305,6 +1658,10 @@ button {
 	.image-img {
 		position: relative;
 		margin-top: -150px;
+		@media #{$bp-blarge} {
+			max-width: 80%;
+			margin-top: -80px;
+		}
 		img {
 			max-width: 100%;
 			height: auto;
@@ -1315,6 +1672,11 @@ button {
 			position: absolute;
 			right: 0;
 			bottom: 210px;
+			@media #{$bp-blarge} {
+				bottom: 170px;
+				left: 75%;
+				right: auto;
+			}
 		}
 	}
 }
@@ -1322,8 +1684,14 @@ button {
 
 .section-slider-2 {
 	margin-bottom: 130px;
+	@media #{$bp-blarge} {
+		margin-bottom: 110px;
+	}
 	&__mb {
 		margin-bottom: 65px;
+		@media #{$bp-blarge} {
+			margin-bottom: 40px;
+		}
 	}
 }
 
@@ -1332,6 +1700,9 @@ button {
 .section-partners {
 	.title {
 		margin-bottom: 80px;
+		@media #{$bp-blarge} {
+			margin-bottom: 50px;
+		}
 	}
 }
 
@@ -1339,6 +1710,10 @@ button {
 .section-slider-2 {
 	.button {
 		margin-top: 60px;
+		@media #{$bp-blarge} {
+			margin-top: 50px;
+			font-size: 13px;
+		}
 	}
 }
 
@@ -1376,6 +1751,10 @@ button {
 		color: white;
 		font-size: 20px;
 		font-family: $pts;
+		@media #{$bp-blarge} {
+			font-size: 16px;
+			line-height: 20px;
+		}
 	}
 }
 
@@ -1415,6 +1794,10 @@ button {
 		font-weight: 700;
 		letter-spacing: 0.5px;
 		font-family: $pts;
+		@media #{$bp-blarge} {
+			font-size: 24px;
+			letter-spacing: 0.43px;
+		}
 	}
 
 	&__sub {
@@ -1422,6 +1805,10 @@ button {
 		font-size: 28px;
 		letter-spacing: 0.5px;
 		font-family: $pts;
+		@media #{$bp-blarge} {
+			font-size: 18px;
+			letter-spacing: 0.32px;
+		}
 	}
 }
 
@@ -1457,6 +1844,9 @@ button {
 		font-size: 14px;
 		&+p {
 			margin-top: 35px;
+			@media #{$bp-blarge} {
+			      margin-top: 25px;
+			}
 		}
 		i {
 			font-style: italic;
@@ -1470,7 +1860,7 @@ button {
 	width: 90%;
 	height: auto;
 	max-width: 100%;
-
+	height: 100%;
 	position: relative;
 	.video-play {
 		@extend %center-abs;
@@ -1479,7 +1869,7 @@ button {
 	&__item {
 		width: 100%;
 		max-width: 100%;
-		height: auto;
+		height: 100%;
 	}
 }
 .r-text {
@@ -1488,6 +1878,9 @@ button {
 .name {
 	color: #010101;
 	font-size: 34px;
+	@media #{$bp-blarge} {
+	      font-size: 24px;
+	}
 }
 
 
@@ -1499,8 +1892,14 @@ button {
 
 .section-maps {
 	padding-top: 80px;
+	@media #{$bp-blarge} {
+	      padding-top: 70px;
+	}
 	.title {
 		margin-bottom: 80px;
+		@media #{$bp-blarge} {
+		      margin-bottom: 65px;
+		}
 	}
 	.icon-phone-input {
 		margin-right: 6px;
@@ -1522,6 +1921,10 @@ button {
 	width: 48%;
 	padding-top: 70px;
 	padding-bottom: 180px;
+	@media #{$bp-blarge} {
+	      padding-bottom: 130px;
+	      padding-top: 50px;
+	}
 }
 .place-box {
 	background-color: white;
@@ -1529,6 +1932,9 @@ button {
 	box-shadow: 0 2px 21px rgba(0, 0, 0, 0.13);
 	position: relative;
 	display: inline-block;
+	@media #{$bp-blarge} {
+	      width: 375px;
+	}
 	&.right {
 		margin-right: 50px;
 	}
@@ -1553,6 +1959,12 @@ button {
 		letter-spacing: 0.47px;
 		line-height: 26px;
 		padding-left: 40px;
+		@media #{$bp-blarge} {
+		      font-size: 16px;
+letter-spacing: 0.38px;
+line-height: 20px;
+margin: 10px 0;
+		}
 	}
 	&__image {
 		img {
@@ -1565,6 +1977,9 @@ button {
 	&__sub {
 		color: rgba(8,8,8, .5);
 		font-size: 18px;
+		@media #{$bp-blarge} {
+	      font-size: 16px;
+	}
 	}
 }
 .wrapp {
@@ -1589,6 +2004,10 @@ button {
 	position: relative;
 	padding-left: 40px;
 	padding-bottom: 25px;
+	@media #{$bp-blarge} {
+	      font-size: 17px;
+letter-spacing: 0.4px;
+	}
 }
 
 
@@ -1623,6 +2042,9 @@ button {
 		img {
 			max-width: 100%;
 			height: auto;
+			@media #{$bp-blarge} {
+			      max-width: 90%;
+			}
 		}
 	}
 
@@ -1633,6 +2055,13 @@ button {
 		background-color: #fafafa;
 		border-radius: 3px;
 		box-shadow: 0 2px 27px rgba(0, 0, 0, 0.09);
+		@media #{$bp-blarge} {
+			padding-top: 65px;
+			padding-bottom: 70px;
+		      .button {
+		      	font-size: 16px;
+		      }
+		}
 	}
 
 	&__dsc {
@@ -1654,13 +2083,20 @@ button {
 	width: 100%;
 	margin-top: -155px;
 	padding-bottom: 60px;
+	@media #{$bp-blarge} {
+	      margin-top: -100px;
+	      padding-bottom: 35px;
+	}
 }
 
 .f-left {
 	margin-top: 70px;
+	@media #{$bp-blarge} {
+	      margin-top: 0;
+	}
 }
 .addr {
-	color: #010101;
+	color: rgba(1,1,1, .33);
 	font-size: 12px;
 	font-family: $pts;
 }
@@ -1675,6 +2111,9 @@ button {
 .up-block {
 	text-align: center;
 	padding-top: 75px;
+	@media #{$bp-blarge} {
+	      padding-top: 90px;
+	}
 	&__link {
 		display: inline-block;
 		color: #5aa632;
@@ -1696,4 +2135,14 @@ button {
 			}
 		}
 	}
+}
+
+
+
+.custom-col-1 {
+	width: 58% !important;
+}
+.custom-col-2 {
+	width: 42% !important;
+	padding-bottom: 50px;
 }
