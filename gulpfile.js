@@ -35,7 +35,7 @@ gulp.task('media', function () {
 
 // optimize image
 gulp.task('tiny', function(cb) {
-  gulp.src('app/img/*')
+  gulp.src(['app/**/*.png','app/**/*.jpg','app/**/*.gif','app/**/*.jpeg'])
   .pipe(tiny())
   .pipe(gulp.dest('image'));
 });
