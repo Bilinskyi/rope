@@ -13,6 +13,7 @@ autoprefixer = require('gulp-autoprefixer'),
 spritesmith  = require('gulp.spritesmith'),
 tiny = require('gulp-tinypng-nokey'),
 gcmq = require('gulp-group-css-media-queries'),
+htmlmin = require('gulp-htmlmin'),
 cleanCSS = require('gulp-clean-css');
 
 
@@ -23,13 +24,20 @@ gulp.task('browserSync', function() {
       baseDir: 'app'
     },
   })
-})
+});
 
 // group @media only screen and (max-width: 991px) 
 gulp.task('media', function () {
     gulp.src('app/css/style.css')
         .pipe(gcmq())
         .pipe(gulp.dest('app/css'));
+});
+
+
+gulp.task('html', function() {
+  return gulp.src('app/index.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('dist/app'));
 });
 
 
@@ -80,11 +88,22 @@ gulp.task('sass', function () {
 gulp.task('scripts', function() {
 	return gulp.src([ 
 		'app/js/**/*.js',
-		'!app/js/**/main.js' 
+		'!app/js/**/main.js',
+    '!app/js/**/main.min.js',
+    '!app/js/**/libs.min.js' 
 		])
 	.pipe(concat('libs.min.js')) 
 	.pipe(jsmin()) 
-	.pipe(gulp.dest('dist/js')); 
+	.pipe(gulp.dest('app/js')); 
+});
+
+gulp.task('main', function() {
+  return gulp.src([ 
+    'app/js/main.js'
+    ])
+  .pipe(concat('main.min.js')) 
+  .pipe(jsmin()) 
+  .pipe(gulp.dest('app/js')); 
 });
 
 

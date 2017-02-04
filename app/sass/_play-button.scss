@@ -9,6 +9,7 @@
   background: rgba(255,255,255, 1) !important;
   background-size: 21px 28px;
   transition: all .15s linear;
+  z-index: 3;
   @media #{$bp-blarge} {
     width: 70px;
     height: 70px;

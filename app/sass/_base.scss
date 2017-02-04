@@ -33,7 +33,7 @@
 *, *:before, *:after {
 	box-sizing: border-box;
 }
-.center{text-align: center;}
+.center{text-align: center !important;}
 .dib {display: inline-block !important;}
 .left-t{text-align: left;}
 .right-t{text-align: right;}

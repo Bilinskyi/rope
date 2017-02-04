@@ -1,5 +1,5 @@
 input:not([type=submit]) {
-  
+ transition: all .2s ease; 
 }
 
 input[type=submit] {
@@ -15,5 +15,5 @@ input[type=submit] {
   }
 }
 input.error {
-  border: 2px solid red !important;
+  box-shadow: inset 0 1px 3px red !important;
 }

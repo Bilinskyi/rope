@@ -773,7 +773,7 @@ hr {
   float: left !important;
 }
 .hide {
-  display: none !important;
+  display: none;
 }
 .show {
   display: block !important;
